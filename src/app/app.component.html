@@ -1,18 +1,28 @@
 <div class="example-container" style="margin-left:30px; padding-top:100px;">
-  <mat-form-field appearance="fill">
-    <mat-label>Input</mat-label>
-    <input matInput>
-  </mat-form-field>
-  <br>
-  <mat-form-field appearance="fill">
-    <mat-label>Select</mat-label>
-    <mat-select>
-      <mat-option value="option">Option</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <br>
-  <mat-form-field appearance="fill">
-    <mat-label>Textarea</mat-label>
-    <textarea matInput></textarea>
-  </mat-form-field>
+  <mat-tab-group mat-align-tabs="end" >
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon style="margin-right:10px;" >thumb_up</mat-icon>
+        First 
+      </ng-template>
+      <div class="tabContent">Content 1</div>
+    </mat-tab>
+    <mat-tab >
+      <ng-template mat-tab-label>
+        <mat-icon style="margin-right:10px;">thumb_up</mat-icon>
+        Second 
+      </ng-template>
+      <div class="tabContent">Content 2</div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon style="margin-right:10px;">thumb_up</mat-icon>
+        Third 
+      </ng-template>
+      <div class="tabContent">Content 3</div>
+    </mat-tab>
+  </mat-tab-group>
+
+
+  <button (click)="changeTab(1)">Open 2nd Tab</button>
 </div>
