@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatInputModule} from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatSelectModule } from '@angular/material/select';
+import {MatTableModule} from '@angular/material/table'
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -17,9 +17,10 @@ import { MatSelectModule } from '@angular/material/select';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
-    MatInputModule,
-    MatFormFieldModule,
-    MatSelectModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
+
 
   ], 
   providers: [],
